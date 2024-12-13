@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 20px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+button, .btn {
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.btn-secondary{
+    background-color: gray;
+    border-color: gray;
+}
+
+button:hover, .btn:hover {
+    background-color: #0056b3;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .btn, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .card-body {
+        padding: 15px;
+    }
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-control {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    button.btn-success {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .form-container, .student-container, .faculty-container {
+		max-width: 100%;
+		padding: 20px;
+	}
+}
+/* Add Course, Batch Page Styles */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+button.btn-success:hover {
+    background-color: #218838;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+input, select, .form-control {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+/* Login page styles */
+.login-container {
+	background-color: white;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 400px;
+}
+
+button {
+	background-color: #007bff;
+}
+
+/* Student and Faculty Specific Styles */
+.student-container, .faculty-container {
+	background-color: white;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 600px;
+}
+
+input[type="radio"] {
+	margin-right: 5px;
+}
+
+input[type="radio"]+label {
+	margin-right: 15px;
+}
+
+.student-body, .faculty-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.btn-primary, .btn-success {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+
+
+/* Toast Notification Styles */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+
+.toast {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toast-header {
+    background-color: #f4f6f9;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 10px;
+    font-weight: bold;
+}
+
+.toast-body {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.toast .close {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}

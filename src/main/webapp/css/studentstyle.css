@@ -1,0 +1,244 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Navigation */
+/* Header Navigation */
+header {
+    background-color: #512da8;
+    color: white;
+    padding: 1em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end; /* Push items to the right */
+    padding: 0 30px; /* Add padding on both sides */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Add space between items */
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+
+/* Main Section */
+main {
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidebar */
+aside {
+    background-color: #fafafa;
+    border-right: 2px solid #ddd;
+    padding: 20px;
+    width: 15%;
+    height: calc(100vh - 100px); /* Adjust for header and footer */
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 15px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #512da8;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content Section */
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+section .content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section .content h2 {
+    color: #512da8;
+    margin-bottom: 10px;
+}
+
+section .content p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #512da8;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: fit-content;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid #ddd;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.calendar-header button:hover {
+    background-color: #0056b3;
+}
+
+.calendar-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.date {
+    padding: 10px;
+    text-align: center;
+    background-color: #e6e6fa;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.date:hover {
+    background-color: #b0c4de;
+}
+
+.attendance {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.attendance h3 {
+    margin: 0 0 10px;
+}
+
+.attendance p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+
+.present {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.absent {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+.late {
+    background-color: #ffc107; /* Yellow */
+    color: black;
+}
+
+.excused {
+    background-color: #17a2b8; /* Blue */
+    color: white;
+}
